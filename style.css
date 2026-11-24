@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: #ffc107 !important;
+}
+
+.nav-link {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.hero {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600")
+        center/cover;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+.property-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.property-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+}
+
+.property-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #123c69;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0a2540;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .property-card img {
+        height: 200px;
+    }
+}
